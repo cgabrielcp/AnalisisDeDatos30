@@ -1,0 +1,16 @@
+services:
+  mysql:
+    build: ./mysql/
+    restart: always
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=retail_db
+    ports:
+      - '3310:3306'
+    volumes: 
+      - ./mysqldata:/mysql/data
+    env_file: 
+      - ./mysql/variables.env
+volumes:
+  mysqldata:
+  mongodata:

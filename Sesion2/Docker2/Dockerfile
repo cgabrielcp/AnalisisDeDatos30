@@ -5,10 +5,10 @@ FROM python:3.8-slim
 WORKDIR /app
 
 # Moiver mis archivos a el espacio de trabajo
-COPY requeriments.txt ./
+COPY requirements.txt ./
 
 # instalar los paquetes
-RUN pip install --no-cache-dir -r requeriments.txt
+RUN pip install --no-cache-dir -r requirements.txt
 
 # Copian todos los archivos del local al espacio de trabajo
 COPY . .

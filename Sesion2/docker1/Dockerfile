@@ -20,6 +20,7 @@ RUN pip3 install --upgrade pip && \
 # definir el directorio del trabajo
 WORKDIR /workspace
 
+
 # Donde se guardara las configuraciones de Jupyter
 RUN mkdir -p /root/.jupyter
 
@@ -34,4 +35,3 @@ EXPOSE 8888
 
 # Comando por defente para inciar el contenedor
 CMD ["jupyter", "notebook", "--ip=0.0.0.0", "--port=8888", "--no-browser", "--allow-root"]
-

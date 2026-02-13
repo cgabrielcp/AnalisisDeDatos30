@@ -15,3 +15,11 @@ docker rmi -f a58859673f21
 
 # Eliminar un contenedor
 docker rm -f 3e47d957070b
+
+# lista imagenes
+docker images
+
+# lista contenedores activos 
+docker ps
+#listar todos contenedores
+docker ps --all

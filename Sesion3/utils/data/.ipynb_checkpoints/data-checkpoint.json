@@ -1,0 +1,5 @@
+{
+    "nombre": ["Juan", "María", "Pedro"],
+    "edad": [25, 30, 35],
+    "ciudad": ["Madrid", "Barcelona", "Sevilla"]
+}
